@@ -1,7 +1,8 @@
 from django.urls import path
-from web.views import webIndex
+from web.views import webIndex,htmlPage
 
 
 urlpatterns = [
-    path('', webIndex)
+    path('', webIndex),
+    path('web/', htmlPage)
 ]
