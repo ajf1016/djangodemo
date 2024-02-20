@@ -1,10 +1,11 @@
 from django.contrib import admin
-from django.urls import path
-from django.http.response import HttpResponse
+from django.urls import path,include
 
-def index(request):
-    return HttpResponse("Hello World!")
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include("web.urls"))
 ]
